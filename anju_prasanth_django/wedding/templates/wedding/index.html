@@ -1,0 +1,131 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Wedding invitation of Anju and Prasanth" />
+  <title>Anju & Prasanth | Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'wedding/style.css' %}" />
+</head>
+<body>
+  <header class="hero" id="home">
+    <nav class="navbar">
+      <a class="brand" href="#home">A <span>&</span> P</a>
+      <div class="nav-links">
+        <a href="#story">Our Day</a>
+        <a href="#details">Details</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#rsvp">RSVP</a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <p class="eyebrow">Together with their families</p>
+      <h1>Anju <span>&</span> Prasanth</h1>
+      <p class="subtitle">Are getting married</p>
+      <div class="date-line">05 · 11 · 2026</div>
+      <a class="button" href="#details">Explore Invitation</a>
+    </div>
+    <div class="scroll-note">Scroll to celebrate ↓</div>
+  </header>
+
+  <main>
+    <section class="intro section" id="story">
+      <p class="eyebrow">A beautiful beginning</p>
+      <h2>Two hearts, one promise</h2>
+      <p class="section-text">
+        With the blessings of our families, we invite you to join us
+        as we celebrate the wedding of Anju and Prasanth.
+        Your presence will make our special day even more memorable.
+      </p>
+    </section>
+
+    <section class="couple-section">
+      <div class="image-wrap">
+        <img src="{% static 'wedding/images/couple.jpg' %}" alt="Anju and Prasanth" />
+      </div>
+      <div class="couple-copy">
+        <p class="eyebrow">The couple</p>
+        <h2>Anju <span>&</span> Prasanth</h2>
+        <p>
+          A new chapter begins with love, laughter and the blessings
+          of everyone who means the most to us.
+        </p>
+        <div class="signature">With love</div>
+      </div>
+    </section>
+
+    <section class="details section" id="details">
+      <p class="eyebrow">Save the date</p>
+      <h2>Wedding Details</h2>
+
+      <div class="detail-grid">
+        <article class="detail-card">
+          <div class="icon">♡</div>
+          <h3>Date</h3>
+          <p>Thursday<br><strong>05 November 2026</strong></p>
+        </article>
+
+        <article class="detail-card">
+          <div class="icon">⌖</div>
+          <h3>Venue</h3>
+          <p><strong>Sree Visweswara Temple</strong><br>Yakkara, Palakkad</p>
+          <a class="text-link" target="_blank"
+             href="https://www.google.com/maps/search/?api=1&query=Sree+Visweswara+Temple+Yakkara+Palakkad">
+             View Location →
+          </a>
+        </article>
+
+        <article class="detail-card">
+          <div class="icon">◷</div>
+          <h3>Time</h3>
+          <p><strong>09:00 AM – 10:00 AM</strong><br>Please arrive on time</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="countdown-section section">
+      <p class="eyebrow">Counting the moments</p>
+      <h2>Until the big day</h2>
+      <div class="countdown" id="countdown">
+        <div><strong id="days">--</strong><span>Days</span></div>
+        <div><strong id="hours">--</strong><span>Hours</span></div>
+        <div><strong id="minutes">--</strong><span>Minutes</span></div>
+        <div><strong id="seconds">--</strong><span>Seconds</span></div>
+      </div>
+    </section>
+
+    <section class="gallery section" id="gallery">
+      <p class="eyebrow">From the invitation</p>
+      <h2>A little glimpse</h2>
+      <div class="gallery-grid">
+        <img src="{% static 'wedding/images/couple.jpg' %}" alt="Wedding couple portrait" />
+        <img src="{% static 'wedding/images/weddingsss.jpeg' %}" alt="Wedding " />
+      </div>
+    </section>
+
+    <section class="rsvp section" id="rsvp">
+      <p class="eyebrow">With warm wishes</p>
+      <h2>We would love to see you</h2>
+      <p class="section-text">
+        Sharing our happiness with family, friends and relatives.
+        Thank you for being part of our celebration.
+{#      </p>#}
+{#      <a class="button" href="mailto:your-email@example.com?subject=Wedding RSVP - Anju and Prasanth">#}
+{#        Send RSVP#}
+{#      </a>#}
+{#      <p class="small-note">Replace the email address in index.html with your own email address.</p>#}
+    </section>
+  </main>
+
+  <footer>
+    <p>Anju <span>♥</span> Prasanth · 2026</p>
+  </footer>
+
+  <script src="{% static 'wedding/script.js' %}"></script>
+</body>
+</html>
